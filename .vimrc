@@ -13,6 +13,10 @@ nmap E $
 nmap B 0w
 nmap J 0jjjjjj
 nmap K 0kkkkkk
+imap <C-H> <Left>
+imap <C-J> <Down>
+imap <C-K> <Up>
+imap <C-L> <Right>
 
 if has("patch-7.4.354")
     " Indents word-wrapped lines as much as the 'parent' line
