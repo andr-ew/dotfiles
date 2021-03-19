@@ -8,3 +8,5 @@ end
 set -g fish_key_bindings hybrid_bindings
 
 fish_hybrid_key_bindings
+
+alias vi nvim
