@@ -26,6 +26,9 @@ nmap E $
 nmap B 0w
 nmap J 0jjjjjj
 nmap K 0kkkkkk
+map q gt
+nmap ql gt
+nmap qh gT
 imap <C-H> <Left>
 imap <C-J> <Down>
 imap <C-K> <Up>
