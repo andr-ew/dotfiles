@@ -2,10 +2,12 @@ syntax enable
 hi Comment ctermfg=130
 hi Constant ctermfg=130
 hi Statement ctermfg=2
+hi Type ctermfg=2
 hi luaTable ctermfg=2
 hi LineNr ctermfg=12
 hi Identifier ctermfg=6
 hi Function term=underline ctermfg=6 guifg=DarkCyan
+hi jsFunction term=underline ctermfg=6 guifg=DarkCyan
 hi luaFunc term=underline ctermfg=6 guifg=DarkCyan
 hi Statement term=underline ctermfg=2 gui=bold guifg=SeaGreen
 hi Conditional term=underline ctermfg=2 gui=bold guifg=SeaGreen
@@ -14,6 +16,17 @@ hi Label term=underline ctermfg=2 gui=bold guifg=SeaGreen
 hi Operator term=underline ctermfg=2 gui=bold guifg=SeaGreen
 hi Keyword term=underline ctermfg=2 gui=bold guifg=SeaGreen
 hi Exception term=underline ctermfg=2 gui=bold guifg=SeaGreen
+hi jsxTagName cterm=bold ctermfg=11
+hi jsxPunct term=bold ctermfg=11 
+hi jsxTag term=bold ctermfg=11 
+hi jsxAttrib term=bold ctermfg=11 
+hi jsBraces term=underline ctermfg=2
+hi jsxBraces term=underline ctermfg=2
+hi jsObjectKey ctermfg=15
+hi jsImport ctermfg=2
+hi jsBuiltinValues ctermfg=6
+hi Operator ctermfg=15
+hi jsFunctionCall ctermfg=15
 
 set number
 set tabstop=4
@@ -44,4 +57,8 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'supercollider/scvim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-commentary'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
