@@ -19,7 +19,7 @@ hi Exception term=underline ctermfg=2 gui=bold guifg=SeaGreen
 hi jsxTagName cterm=bold ctermfg=11
 hi jsxPunct term=bold ctermfg=11 
 hi jsxTag term=bold ctermfg=11 
-hi jsxAttrib term=bold ctermfg=11 
+hi jsxAttrib term=bold ctermfg=15
 hi jsBraces term=underline ctermfg=2
 hi jsxBraces term=underline ctermfg=2
 hi jsObjectKey ctermfg=15
