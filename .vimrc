@@ -27,6 +27,8 @@ hi jsImport ctermfg=2
 hi jsBuiltinValues ctermfg=6
 hi Operator ctermfg=15
 hi jsFunctionCall ctermfg=15
+" hi Pmenu ctermfg=15 ctermbg=12
+hi Pmenu ctermfg=15 ctermbg=6
 
 set number
 set tabstop=4
@@ -46,6 +48,10 @@ imap <C-H> <Left>
 imap <C-J> <Down>
 imap <C-K> <Up>
 imap <C-L> <Right>
+command W w
+command Q q
+cabbrev c tabedit
+cabbrev x tabedit
 
 if has("patch-7.4.354")
     " Indents word-wrapped lines as much as the 'parent' line
@@ -56,9 +62,10 @@ if has("patch-7.4.354")
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'supercollider/scvim'
-Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-commentary'
-Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty'
+    Plug 'supercollider/scvim'
+    Plug 'jiangmiao/auto-pairs'
+    Plug 'tpope/vim-commentary'
+    Plug 'yuezk/vim-js'
+    Plug 'maxmellon/vim-jsx-pretty'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
