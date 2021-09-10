@@ -10,3 +10,11 @@ set -g fish_key_bindings hybrid_bindings
 fish_hybrid_key_bindings
 
 alias vi nvim
+
+bind \cn accept-autosuggestion
+
+fish_add_path ~/.composer/vendor/bin
+fish_add_path ~/.cargo/bin
+
+
+alias tre 'fd --type f --hidden --exclude .git | tree --fromfile'
