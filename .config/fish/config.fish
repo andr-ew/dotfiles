@@ -18,3 +18,13 @@ fish_add_path ~/.cargo/bin
 
 
 alias tre 'fd --type f --hidden --exclude .git | tree --fromfile'
+
+#alias nsyn 'bash ~/c/norns-sync.sh'
+#alias nwatch 'nodemon -e lua -x ~/c/norns-sync.sh'
+
+function nsyn
+    bash ~/c/norns-sync.sh $argv
+end
+function nwatch
+    nodemon -e lua -x ~/c/norns-sync.sh $argv
+end
