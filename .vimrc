@@ -43,6 +43,8 @@ hi jsDestructuringBraces ctermfg=2
 hi jsRepeatBraces ctermfg=6
 hi jsNull ctermfg=130
 
+hi hugoDelimiters term=bold ctermfg=11 
+
 set number
 set tabstop=4
 set shiftwidth=4
@@ -71,6 +73,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
     Plug 'tpope/vim-obsession'
+    Plug 'phelipetls/vim-hugo'
 call plug#end()
 
 "mapping       
